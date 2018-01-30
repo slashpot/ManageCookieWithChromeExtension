@@ -4,9 +4,9 @@ class ReactMenuButton extends React.Component{
 		this.props.toggleMenu();
 	}
 	
-	render(){
-		if(this.props.showMenu) return null;
-		return React.createElement("DIV", {className: "menu-button", onClick: this.toggleMenu.bind(this)}, "》");
+	render(){		
+		const display = this.props.showMenu ? "none": "block";
+		return React.createElement("DIV", {className: "menu-button", style:{display:display}, onClick: this.toggleMenu.bind(this)}, "》");
 	}
 }
 
@@ -45,12 +45,12 @@ class ReactMainArea extends React.Component{
 	}
 	
 	render(){
-		if(!this.props.showMenu) return null;
+		const display = !this.props.showMenu ? "none": "block";
 		const cookies = this.props.cookies.map(cookie => React.createElement("LI", {dataSet:{name:cookie.name},onClick: this.removeCookie.bind(this, cookie.name)}, `${cookie.name} : ${cookie.value}`));
 		
 		return React.createElement(
 			"DIV",
-			{},
+			{ style:{display:display}},
 			React.createElement("DIV", {className: "close-menu", onClick: this.toggleMenu.bind(this)}, "x"),
 			React.createElement("INPUT", {onChange: this.handleNameChanged.bind(this)}, null),
 			React.createElement("INPUT", {onChange: this.handleValueChanged.bind(this)}, null),

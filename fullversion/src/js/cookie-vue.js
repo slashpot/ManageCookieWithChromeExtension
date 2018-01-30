@@ -47,7 +47,7 @@ new Vue({
 			},
 			template: ` 
 				<div class="extension-cookie-management-container">
-					<template v-if="showMenu">
+					<div v-show="showMenu">
 						<div class="close-menu" @click="toggleMenu">x</div>
 						<input type="text" v-model="cookie.name"/>
 						<input type="text" v-model="cookie.value"/>
@@ -55,8 +55,8 @@ new Vue({
 						<ul>
 							<li v-for="cookie in cookies" @click="removeCookie(cookie.name)">{{cookie.name}} : {{cookie.value}}</li>
 						</ul>
-					</template>
-					<div v-else @click="toggleMenu" class="menu-button">》</div>
+					</div>
+					<div v-show="!showMenu" @click="toggleMenu" class="menu-button">》</div>
 				</div>
 			`
 		});
