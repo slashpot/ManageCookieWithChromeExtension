@@ -1,0 +1,33 @@
+.extension-cookie-management-container{
+	position : fixed;
+	top : 100px;
+	left : 0px;
+	background-color : #AD2A1A;
+	border : 1px solid #999;
+	padding : 13px;
+	color: white;
+}
+
+.extension-cookie-management-container .close-menu{
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	cursor: pointer;
+}
+
+.extension-cookie-management-container .menu-button{
+	cursor: pointer;
+}
+
+.extension-cookie-management-container ul{
+	
+}
+
+.extension-cookie-management-container li{
+	cursor: pointer;
+	list-style: decimal;
+}
+
+.extension-cookie-management-container li:hover{
+	background-color: gray;
+}
