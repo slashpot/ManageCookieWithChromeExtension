@@ -24,10 +24,19 @@ class NativeCookieManagement{
 	constructor()
 	{		
 		const container = document.createElement("DIV");
-		container.className = "extension-cookie-management-container";
+		const cookieList = document.createElement("UL");
+		container.appendChild(cookieList);
 
+		const cookies = this.getCookie();
+		cookies.forEach(cookie => {
+			const list = document.createElement("LI");
+			list.textContent = "name: " + cookie.name +" value: " + cookie.value;
+			cookieList.appendChild(list);
+		});
+
+		container.className = "extension-cookie-management-container";
 		document.querySelector("#extension-cookie-management-native").appendChild(container);
 	}
 }
 
-new NativeCookieManagement();
+new NativeCookieManagement()
