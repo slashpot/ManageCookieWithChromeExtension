@@ -1,5 +1,5 @@
 // set up your achievement name here!!!
-const name = "ttt";
+const name = "";
 
 if(!document.getElementById(`extension-cookie-management-name`))
 {
