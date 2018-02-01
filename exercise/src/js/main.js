@@ -1,11 +1,12 @@
 // set up your achievement name here!!!
-const name = "";
+const name = "ttt";
 
 if(!document.getElementById(`extension-cookie-management-name`))
 {
 	const ele = document.createElement("DIV");
 	ele.id = `extension-cookie-management-name`;
 	ele.textContent=name;
+	ele.style.display = "none";
 	document.body.appendChild(ele);
 }
 
