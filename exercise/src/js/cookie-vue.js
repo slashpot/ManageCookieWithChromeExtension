@@ -24,7 +24,8 @@ new Vue({
 			},
 			template: ` 
 				<div class="extension-cookie-management-container">
-					
+					<!-- start here!!! -->
+					<h1>You should see these word in your browser! let change this to your real code!</h1>
 				</div>
 			`
 		});

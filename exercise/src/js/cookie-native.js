@@ -25,6 +25,15 @@ class NativeCookieManagement{
 	{		
 		const container = document.createElement("DIV");
 		container.className = "extension-cookie-management-container";
+		
+		
+		
+		// start here!!! 
+		const sampleCode = document.createElement("H1");
+		sampleCode.textContent = "You should see these word in your browser! let change this to your real code! ";
+		container.appendChild(sampleCode);
+				
+		
 
 		document.querySelector("#extension-cookie-management-native").appendChild(container);
 	}
