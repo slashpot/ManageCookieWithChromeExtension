@@ -1,6 +1,7 @@
 new Vue({
 			el: "#extension-cookie-management-vue",
 			data:{
+				cookies:[]
 			},			
 			methods: {			
 				getCookie(){
@@ -22,9 +23,17 @@ new Vue({
 				    document.cookie = name+'=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/;';
 				}
 			},
-			template: ` 
+			mounted() {
+				this.cookies = this.getCookie();
+			},
+			template: 
+			` 
 				<div class="extension-cookie-management-container">
-					
+					<ul>
+						<li v-for="cookie in cookies">
+							name: {{cookie.name}} value: {{cookie.value}}
+						</li>
+					</ul>
 				</div>
 			`
 		});
