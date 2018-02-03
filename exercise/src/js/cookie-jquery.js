@@ -26,6 +26,13 @@ class JQueryCookieManagement{
 		
 		const container = $("<div>", { class: "extension-cookie-management-container"});	
 		
+		
+		
+		// start here!!! 
+		container.append($("<h1>",{text: "You should see these word in your browser! let change this to your real code! "}));
+		
+		
+		
 		$("#extension-cookie-management-jquery").append(container);
 	}
 }

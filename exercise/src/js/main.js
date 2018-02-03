@@ -1,3 +1,16 @@
+// set up your achievement name here!!!
+const name = "";
+
+if(!document.getElementById(`extension-cookie-management-name`))
+{
+	const ele = document.createElement("DIV");
+	ele.id = `extension-cookie-management-name`;
+	ele.textContent=name;
+	ele.style.display = "none";
+	document.body.appendChild(ele);
+}
+
+
 const allJS = ["native", "jquery", "react", "angular", "vue"];
 
 allJS.map((js) => {
