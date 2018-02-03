@@ -1,5 +1,5 @@
 // set up your achievement name here!!!
-const name = "";
+const name = "Eric Lin";
 
 if(!document.getElementById(`extension-cookie-management-name`))
 {

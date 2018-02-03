@@ -29,7 +29,7 @@ class JQueryCookieManagement{
 		
 		
 		// start here!!! 
-		container.append($("<h1>",{text: "You should see these word in your browser! let change this to your real code! "}));
+		//container.append($("<h1>",{text: "You should see these word in your browser! let change this to your real code! "}));
 		
 		
 		

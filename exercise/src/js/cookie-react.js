@@ -30,7 +30,7 @@ class ReactCookieManagement extends React.Component{
 			"DIV", 
 			{className: 'extension-cookie-management-container'}, 
 			// start here!!! 
-			React.createElement("H1", {}, "You should see these word in your browser! let change this to your real code! ")
+			//React.createElement("H1", {}, "You should see these word in your browser! let change this to your real code! ")
 		);
 	}
 }
